@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  },
+  "name": "kennect",
+  "version": "1.0.0",
+  "description": "Assignments",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon js,ejs index.js",
+    "type": "module",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhhuurrii/Assignment.git"
+  },
+  "author": "Madhuri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madhhuurrii/Assignment/issues"
+  },
+  "homepage": "https://github.com/madhhuurrii/Assignment#readme"
+}
