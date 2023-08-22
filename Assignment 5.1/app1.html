@@ -14,15 +14,15 @@
     <div class="container p-3">
         <h1 class="text-center pb-4">Kennect Assignment 5.1</h1>
         <form  onsubmit="myFunc();return false;" class="pt-4 text-center">
-            <label for="">Enter the Repository Name:</label>
-            <br>
-            <input type="text" clas="p-5" name="user" id="user" >
-            <br>
-            <label for="">Enter the Repository Name:</label>
-            <br>
-            <input type="text" clas="p-5" name="repo" id="repo" >
-            <br>
-            <input type="submit" class="btn btn-primary m-2" value="submit">
+          <label for="" class="py-3">Enter the User Name: </label>
+          <br>
+          <input type="text" clas="pb-5" name="user" id="user" >
+          <br>
+          <label for="" class="py-3">Enter the Repository Name: </label>
+          <br>
+          <input type="text" clas="pb-5" name="repo" id="repo" >
+          <br>
+          <input type="submit" class="btn btn-primary mt-4" value="submit">
         </form>
         
                 <div class="text-center" id="rej">A. Status wise count of issues:</div> 
@@ -37,7 +37,7 @@
     </div>
     <div class="text-center">
         <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Sort by Created Aesc
+            Sort by Created desc
           </button>
           <div  class="collapse pt-4" id="collapseExample">
             <div id="sort" class="text-center"></div>
@@ -96,12 +96,13 @@
             
                 document.getElementById('Close').innerHTML='Closed Issue:'+c;
 
-                var sor= await fetch(API_URL+'repos/'+user+'/'+repo+'/issues?per_page=100+sort+direct:aesc');
+            var sor= await fetch(API_URL+'repos/'+user+'/'+repo+'/issues?per_page=100?q=sort:created+direction:desc');
             var s=await sor.json()
+            console.log(s);
             const s1 = document.getElementById("sort");
             s.forEach((i) => {
                 // console.log(i.body);
-                console.log(i.title)
+                // console.log(i.title)
                var iss=document.createElement('div')
                iss.classList.add("pb-3");
                 iss.innerHTML= "<h3>"+i.title+"</h3><div>Issue Number: #"+i.number+" Issue State:"+i.state+"</div>"
