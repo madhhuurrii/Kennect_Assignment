@@ -1,6 +1,8 @@
-const express = require('express')
-const app = express()
+const http = require("http");
+const express = require('express');
+const app = express();
 const port = 5000
+
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
@@ -37,6 +39,7 @@ app.get('/sub',(req,res)=>{
     res.send(d.toLocaleDateString());
     console.log(day,date)
 })
-app.listen(port, () => {
+
+http.createServer(app).listen(port, () => {
   console.log(`The app listening on port ${port}`)
 })
