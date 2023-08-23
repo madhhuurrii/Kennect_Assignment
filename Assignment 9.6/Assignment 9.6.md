@@ -1,6 +1,8 @@
 # Assignment 9.6
 
 ## Create a simple nodejs server to make respond with answer to calendar questions like below
+code: [index.js](index.js) , [index.html](index.html)
+
 ![img](img/Screenshot%202023-08-22%20113824.png)
 ### 1. add, 6 days to today and return date
 ![add](img/Screenshot%202023-08-22%20113946.png)
