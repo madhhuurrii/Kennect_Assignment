@@ -1,5 +1,9 @@
 # Assignment 8.1
 Write a function 'getPrimes' using JS to return all the prime number in a given input range
+
+Code: [prime.js](prime.js), [home.html](home.html)
+
+Function Code: [getprimesinrange.js](getprimesinrange.js)
 ## 1. Comment on time and space complexity of the program
 The Time Complexity of the 'getPrimes' js program is O(N^2) because of the nested for loop while Space Complexity of the program in O(1) 
 ![op8](img/image-9.png)
