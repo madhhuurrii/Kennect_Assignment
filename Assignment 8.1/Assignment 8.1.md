@@ -2,7 +2,7 @@
 Write a function 'getPrimes' using JS to return all the prime number in a given input range
 ## 1. Comment on time and space complexity of the program
 The Time Complexity of the 'getPrimes' js program is O(N^2) because of the nested for loop while Space Complexity of the program in O(1) 
-
+![op8](image-9.png)
 ## 2. Find out the metrics about the performance of the function
  a. Time taken to execute getPrime function (for input range 1 to 100)
  ![op3](image-2.png)

@@ -1,24 +1,24 @@
 function myFunc(){
-    let num1= document.getElementById('num1').value;
+
+let num1= document.getElementById('num1').value;
 let num2 = document.getElementById('num2').value;
 // console.log( typeof num1);
+
 let n1=parseInt(num1,10)
 let n2=parseInt(num2,10)
 console.log(n1,n2);
-
 console.log( typeof n1);
 let sum=0;
-function getPrimes(n1,n2){
+
+function getPrimesInRange(n1,n2){
     // const num1= document.getElementById('num1').value;
     // const num2 = document.getElementById('num2').value;
     
-    var f=0;
+    var f=0; //flag
     for(let i =n1; i<=n2;i++){
-       
         var node1 = document.createElement('div')
         var number1=document.createTextNode(i);
         node1.appendChild(number1)
-
         console.log(i)
         let start = performance.now();
         if(i==0||i==1){
@@ -86,7 +86,7 @@ function getPrimes(n1,n2){
 }
 
 let s = performance.now();
-getPrimes(n1,n2)
+getPrimesInRange(n1,n2)
 // document.getElementById('details').innerHTML= 
 let t = performance.now() - s;
 t=t.toFixed(4)
