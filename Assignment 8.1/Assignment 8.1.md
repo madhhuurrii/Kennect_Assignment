@@ -14,10 +14,11 @@ The Time Complexity of the 'getPrimes' js program is O(N^2) because of the neste
  ![op5](image-5.png)
 
  d. Average time take to exectue a range
+ 
  ![op4](image-3.png)
 
 ## 3. Design a UI Wireframe for displaying above information in most efficient way
-Design using Figma
+Designed using Figma
 ![op6](img/Signup%20A.png)
 
 ## 4. Implement a plain HTML-CSS page to display above info in specified way
@@ -28,6 +29,7 @@ Design using Figma
 ![op1](image-1.png)
 
  c. A button in main result called deatils 
+ 
  ![op4](image-8.png)
  
  d. Onclick button, open a pop-up and show 2b. and 2c. in two tabs each  
